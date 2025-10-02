@@ -17,18 +17,7 @@
     <!--[if lt IE 9]>
         <script src="js/respond.min.js"></script>
     <![endif]-->
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?24c1702de771e9827b3c842fdafa151d";
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-    <!--引用百度地图API-->
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=TtpcTSPL42KtUrbG0rWq19sWGsBo9Fwt"></script>
-    <link rel="stylesheet" href="css/main.scss">
+<!--    <link rel="stylesheet" href="css/main.scss">-->
 </head>
 
 <body>
@@ -48,6 +37,10 @@
                 </ul>
             </nav>
             <!-- Sidebar Footer -->
+            <div>
+                <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=n&d=FEJsDZLVKeZgGUwdyv4dJiAzJOp-vJjnJhcm2DFIF1o&co=163693"></script>
+
+            </div>
         </aside>
         <!-- Main Section -->
         <div id="lonon-main">
@@ -227,21 +220,6 @@ He has published more than 20 papers in prestigious CCF-recommended journals and
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/sticky-kit.min.js"></script>
         <script src="js/main.js"></script>
-        <script type="text/javascript">
-            var map = new BMapGL.Map("dituContent");          // 创建地图实例
-            var point = new BMapGL.Point(118.828699,31.891475);  // 创建点坐标
-            map.centerAndZoom(point, 15);                 // 初始化地图，设置中心点坐标和地图级别
-            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-            map.setHeading(0);   //设置地图旋转角度
-            map.setTilt(50);       //设置地图的倾斜角度
-
-            // 禁止地图旋转和倾斜可以通过配置项进行设置
-            var map = new BMapGL.Map("allmap",{
-                enableRotate: false,
-                enableTilt: false
-            });
-
-        </script>
     </div>
 </body>
 
